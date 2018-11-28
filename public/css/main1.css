@@ -8,7 +8,7 @@ body {width: 100%; height: 100%; }
 
 header {width: 100%; text-align: center;}
 .head {width: 100%; height: 30px; background-color: #000;}
-.logos {margin-top: 2rem;}
+.logos {margin-top: 2rem; margin-bottom: 20px;}
 .logos>h4{font-family: 'Allerta Stencil', sans-serif;}
 .logo { font-size:3rem; font-family: 'Allerta Stencil', sans-serif;}
 .box {background-color: #000; color: #fff; padding: 2px;font-family: 'Allerta Stencil', sans-serif;}
@@ -16,7 +16,7 @@ header {width: 100%; text-align: center;}
 
 /****************section***********/
 section{}
-.main {width:100%; position:relative;  max-height:700px; overflow-y: hidden; margin-bottom: 95px;}
+.main {width:100%; position:relative;  max-height:700px; overflow-y: hidden; margin-bottom: 85px;}
 .main>.fa{position: absolute; top:30px; right: 30px; font-size: 2rem; color: #fff; z-index: 111111111; }
 
 .xs{position: absolute; top: 5%; left: 40%; z-index:1;}
@@ -31,7 +31,7 @@ section{}
 
 #home{display: block; padding-bottom: 50px;}
 .about{display: block; padding-bottom: 50px;}
-.port{display: block;padding-bottom: 10px;}
+.port{display: block;padding-bottom: 10px; color: #ccc;}
 .site>a{display: block;}
 #back{position:absolute; width:800px; height: 100%; right: 0; background-color: #000; opacity: 0.9; filter: opacity(90%); 
      z-index:111111; color: #fff; font-size: 2rem; text-align: center; padding-top:220px; 
