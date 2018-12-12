@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TOM N TOMS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/site_toms.css">
+    <script defer src="/__/firebase/5.5.5/firebase-app.js"></script>
+    <script defer src="/__/firebase/5.5.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.5.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.5.5/firebase-storage.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="head">
+        <div class="top">
+            <ul class="wrap">
+                <li class="tops">
+                    <img src="../img/toms/탐탐로고.png" class="logo">
+                    <a class="first">BRAND</a>
+                    <a>MENU</a>
+                    <a>EVENT</a>
+                    <a>STORE</a>
+                    <a>SURVICE</a>
+                    <a>COMMUNITY</a>
+                    <a>TOM N TOMS</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bg">
+            <div class="main wrap">
+                <!-- <div class="w3-center pager_wrap">
+                <div class="w3-bar w3-border w3-round pager"></div>
+            </div> -->
+                <div class="main_tit">
+                    <h3>따라올 수 없는 향긋함!</h3>
+                    <h2>Cafe Americano</h2>
+                    <h1>아메리카노</h1>
+                    <p>에스프레소를 물에 희석시킨 커피로 진한 향과 맛을 부드럽게 즐기는 커피 음료</p>
+                </div>
+                <div class="main_img">
+                    <img src="../img/toms/아아.png" class="ice">
+                    <img src="../img/toms/핫아메.png" class="hot">
+                </div>
+            </div>
+            <div class="w3-center pager">
+                <div class="w3-bar w3-border w3-round pager"></div>
+            </div>
+        </div>
+          <div id="cir">
+              <p class="cir"><i class="fa fa-circle"></i><i class="fa fa-circle"></i><i class="fa fa-circle"></i></p>
+          </div>
+        <img src="../img/toms/wind.jpg" class="wind">
+    </header>
+    <section class="store clear">
+        <div class="img">
+            <div class="store_lt">
+                <div class="lt_tit">
+                    <div>OPEN&nbsp;&nbsp;NEW STORE</div>
+                    <h2>탐앤탐스</h2>
+                    <h1>새 매장을</h1>
+                    <h1>소개합니다.</h1>
+                </div>
+                <div class="box"><a>탐앤탐스 새 매장 만나기</a>
+                    <a><i class="fa fa-angle-right rit"></i></a>
+                </div>
+                <img src="../img/toms/left.png">
+            </div>
+        </div>
+        <div class="img">
+            <div class="store_rt">
+                <div class="rt_tit">
+                    <div>SERCH&nbsp;&nbsp;TOM N TOMS</div>
+                    <h2>탐앤탐스</h2>
+                    <h1>매장,</h1>
+                    <h1 class="bold">어디있죠?!</h1>
+                </div>
+                <div class="box"><a>가까운 지역명을 검색하세요</a>
+                    <a><i class="fa fa-search rit"></i></a>
+                </div>
+                <img src="../img/toms/right.png" class="img">
+            </div>
+        </div>
+    </section>
+    <section class="eat">
+        <div class="menu wrap">
+            <div class="menu_tit">
+                <div>TOMNTOMS&nbsp;MENU</div>
+                <h1>오늘 탐탐에서</h1>
+                <h1>뭘 먹을까?</h1>
+            </div>
+            <div class="boxs"><a>TOMNTOMS&nbsp;전체메뉴보기</a>
+                <a><i class="fa fa-search rit"></i></a>
+            </div>
+            <div class="menu_img">
+                <img src="../img/toms/프레즐.png" class="img">
+                <img src="../img/toms/슬러시.png" class="img">
+                <img src="../img/toms/라떼.png" class="img">
+            </div>
+        </div>
+    </section>
+    <section class="menu_ck">
+        <div class="ck wrap">
+            <ul class="ck_one">
+                <h2>01</h2>
+                <p>커피</p>
+                <p class="bold">COFFEE</p>
+                <img src="../img/toms/sc2_아이스티.png" class="img">
+            </ul>
+            <ul class="ck_two">
+                <h2>02</h2>
+                <p>음료</p>
+                <p class="bold">DRINK</p>
+                <img src="../img/toms/sc2_쥬스.png" class="img">
+            </ul>
+            <ul class="ck_three">
+                <h2>03</h2>
+                <p>디저트</p>
+                <p class="bold">DESERT</p>
+                <img src="../img/toms/sc2_빙수.png" class="img">
+            </ul>
+        </div>
+    </section>
+    <section class="memb">
+        <div class="memb_tit">
+            <div class="memb_nav clear">
+                <div class="my">MY TOM MEMBERSHIP</div>
+                <div class="memb_sub">
+                    <h4>전국에서</h4>
+                    <h2>현금처럼 사용가능한</h2>
+                    <h3>탐앤탐스 어플리케이션</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sns">
+        <div class="comu wrap">
+            <div class="comu_tit">TOMS COMMUNITY</div>
+            <h1>좋은 사람들이 함께하는 <span class="bold">TOM N TOMS</span></h1>
+            <ul class="comu_box">
+                <li class="insta_one">
+                    <a><i class="fa fa-instagram"></i>INSTAGRAM</a>
+                    <p>휴게소에서 동생이랑
+                        나눠 마신
+                        <span>#탐앤탐스 #밀크티</span>
+                    </p>
+                    <div class="comu_img">
+                        <img src="../img/toms/in_밀크티.png" class="img">
+                    </div>
+                </li>
+                <li class="insta_two">
+                    <a><i class="fa fa-instagram"></i>INSTAGRAM</a>
+                    <p>새벽탐탐 행복한 새벽
+                        <span>#jmt</span>
+                    </p>
+                    <div class="comu_img">
+                        <img src="../img/toms/in_3.png" class="img">
+                    </div>
+                </li>
+                <li class="face_one">
+                    <a><i class="fa fa-facebook-square"></i>FACEBOOK</a>
+                    <p>
+                        탐스 크레이지
+                        파머스 도산로점!
+                        <span>#신규매장오픈</span>
+                    </p>
+                    <div class="comu_img">
+                        <img src="../img/toms/in_2.png" class="img">
+                    </div>
+                </li>
+                <li class="face_two">
+                    <a><i class="fa fa-facebook-square"></i>FACEBOOK</a>
+                    <p>2018년 하반기를 탐나게!
+                        <span>#대학생서포터즈모집</span>
+                    </p>
+                    <div class="comu_img">
+                        <img src="../img/toms/in_4.png" class="img">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="last clear">
+        <div class="last_lt">
+            <img src="../img/toms/last_logo.png" class="img">
+            <div class="lt_bg"></div>
+            <div class="lt_cont"></div>
+            <h1>TOM&nbsp;N&nbsp;TOMS</h1>
+            <h5>탐앤탐스는 모든 고객에게<span>최고의 커피를 제공합니다.</span></h5>
+        </div>
+        <div class="last_rt">
+            <div>TOMS&nbsp;PEOPLE</div>
+            <h2>탐스와 함께 할</h2>
+            <h1>당신을<span>모십니다.</span></h1>
+        </div>
+    </section>
+    <footer class="footer">
+            <div class="foot_lt wrap">
+                <h2 class="bold">TOM N TOMS COFFEE</h2>
+                <p>대표이사 김도균 | 사업자등록번호:215-86-65050 | 서울특별시 강남구 논현로 163길 10 베드로빌딩 2F (구 : 신사동 570-6)</p>
+                <p>COPYRIGHT (c) 2018 TOM N TOMS COFFEE. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="foot_rt">
+                <ul class="rt clear">
+                    <li class="rt_cont wrap">
+                        <a>채용안내</a>
+                        <a>개인정보처리방침</a>
+                        <a>이용약관</a>
+                        <a>사이트맵</a>
+                    </li>
+                </ul>
+                <p class="bold"><i class="fa fa-phone-square"></i>&nbsp;&nbsp;02-3412-0781</p>
+            </div> 
+    </footer>
+
+
+
+    <script defer src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script defer src="../js/Ajax.js"></script>
+    <script defer src="../js/site_toms.js"></script>
+</body>
+
+</html>

@@ -9,6 +9,20 @@ $(".xs").mousemove(function(evt){
 });
 */
 
+/*****나무 효과 *****/
+$(".main").mousemove(function(evt){
+    var delta = 30;
+    var cX = evt.clientX;
+    var iX = $(this).find(".main_tree2").width()/2;
+    var cY = evt.clientY;
+    var iY = $(this).find(".main_tree2").height()/2;
+    //중심iX보다 적을때는 +쪽으로 밀어내고 iX보다 클때는 -쪽으로 밀어냄
+    var mX = (iX - cX)/delta * 0.15;
+    var mY = (iY - cY)/delta * 0.15;
+    $(this).find(".main_tree2").css("transform","translate("+mX+"px, "+mY+"px)")
+});
+
+
 var meChk = false;
 
 $("#me").click(function(){
@@ -38,50 +52,55 @@ $("#skill").click(function(){
         $("#cont_skill").stop().animate({"top":"9%"}, 1500, "linear");
     }
 });
-/****사이트 호버 */
+
+
+var n = 0;
+var clickChk = true;
+
+$(".site>a").click(function(){
+    n = $(this).index();
+    $("#close").trigger("click");
+    $(".site_img > img").eq(n).show();
+    $(".xs").stop().animate({"top":"5%"}, 1000, "linear");
+    $("#bar").show();
+    $("#close").hide();
+});
+
+
 $(".site>a").hover(function(){
-   $(".xs").hide()
+    if(clickChk) {
+        $(".site_img > img").eq($(this).index()).show();
+        $(".xs").stop().animate({"top":"5%"}, 1000, "linear");
+    }
 }, function(){
-    $(".content").hide()
-});
-
-$(".port").hover(function(){
-    $("#bgs").show()
-}, function(){
-    $("#bgs").hide()
-});
-
-
-$(".site>a:first-child").hover(function(){
-   $("#novo").show()
-}, function(){
-    $("#novo").hide()
+    console.log("hoverOut");
+    if(clickChk) {
+        $(".site_img > img").hide();
+        // $(".xs").stop().animate({"top":"-5%"}, 1000, "linear");
+    }
 });
 
 
-$(".site>a:nth-child(2)").hover(function(){
-    $("#kim").show()
- }, function(){
-     $("#kim").hide()
+
+
+
+
+
+$(".port").click(function(){
+    $(".site").stop().slideToggle(300);
  });
 
- 
-$(".site>a:nth-child(3)").hover(function(){
-    $("#toms").show()
- }, function(){
-     $("#toms").hide()
+
+ $("#bar").click(function(){
+    clickChk = true;
+    $("#back").stop().slideDown(300);
+    $("#bar").hide();
+    $("#close").show();
  });
 
- 
-$(".site>a:nth-child(4)").hover(function(){
-    $("#ns").show()
- }, function(){
-     $("#ns").hide()
- });
-
- 
-$(".site>a:nth-child(5)").hover(function(){
-    $("#guri").show()
- }, function(){
-     $("#guri").hide()
- });
+ $("#close").click(function(){
+    clickChk = false;
+    $("#back").stop().slideUp(300);
+    $("#bar").show();
+    $("#close").hide();
+  });
