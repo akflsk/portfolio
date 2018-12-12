@@ -8,38 +8,44 @@ body {width: 100%; height: 100%; }
 
 header {width: 100%; text-align: center;}
 .head {width: 100%; height: 30px; background-color: #000;}
-.logos {margin-top: 2rem; margin-bottom: 20px;}
+.logos {margin-top: 2rem;}
 .logos>h4{font-family: 'Allerta Stencil', sans-serif;}
 .logo { font-size:3rem; font-family: 'Allerta Stencil', sans-serif;}
 .box {background-color: #000; color: #fff; padding: 2px;font-family: 'Allerta Stencil', sans-serif;}
 
 
 /****************section***********/
-section{}
-.main {width:100%; position:relative;  max-height:700px; overflow-y: hidden; margin-bottom: 85px;}
-.main>.fa{position: absolute; top:30px; right: 30px; font-size: 2rem; color: #fff; z-index: 111111111; }
+section{height:calc(100% - 250px);}
+.main {width:100%; position:relative;  height:100%; background-color:#8da1b9; }
+#bar{position: absolute; top:30px; right: 30px; font-size: 2rem; color: #fff; z-index: 1111111; }
+#close{position: absolute; top:30px; right: 30px; font-size: 2rem; color: #fff; z-index: 1111111; display: none;}
+.main >.fa{position: absolute; top:30px; right: 30px; font-size: 2rem; color: #fff; z-index: 111111; }
 
 .xs{position: absolute; top: 5%; left: 40%; z-index:1;}
-.btn{position: absolute; top: 75%; left: 44%; z-index: 1111;}
-#me{ margin-right:10px; margin-left: -10px;}
+.btn {position: absolute; top: 75%; left:0; right:0; margin:0 auto; text-align:center;}
+.btn > button {margin:0 0.5rem;}
+#me{ margin-left:-28px;}
 #skill{}
 
-
+.content {width:55%; right:0; height:100%; position: absolute; overflow-y: hidden;}
+.cont_img {top:110%; position: absolute;}
+.site>a:hover{cursor: pointer;}
+.site_img>img{position: absolute; max-width:1600px; display: none; z-index: 11111; }
 
 
 /***************hover***********************/
-
-#home{display: block; padding-bottom: 50px;}
-.about{display: block; padding-bottom: 50px;}
-.port{display: block;padding-bottom: 10px; color: #ccc;}
-.site>a{display: block;}
+#home:hover,#back>a:hover,.site>a:hover{color: rgba(254,111,97);}
+#home{display: block; padding-bottom: 50px;color: #ccc;}
+.about{display: block; padding-bottom: 50px;color: #ccc;}
+.port{display: block;padding-bottom: 10px; cursor: pointer;color: #ccc;}
 #back{position:absolute; width:800px; height: 100%; right: 0; background-color: #000; opacity: 0.9; filter: opacity(90%); 
      z-index:111111; color: #fff; font-size: 2rem; text-align: center; padding-top:220px; 
      display: none;
 }
 #back>div:first-child{text-decoration-line: underline;}
 #back>div:nth-child(2){padding-top:100px;text-decoration-line: underline; }
-.site{font-size: 1rem; }
+.site{font-size: 1rem; display: none; }
+.site>a{display: block;color: #ccc; }
 #tit>i:hover{color: steelblue;}
 
 
@@ -47,7 +53,7 @@ section{}
 
 
 /****************foote(고정)***********/
-footer {width: 100%; }
+footer {width: 100%; height:30px; position: fixed; bottom:0; z-index:12;}
 .foot { height: 30px; background-color: #000; 
        color: #ccc; text-align: center; font-size: 1rem; }
 
