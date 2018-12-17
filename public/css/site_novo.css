@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+
+
+body {width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
+h2,h3,h4,h5,p,a {
+    font-family: 'Open Sans', sans-serif;}
+.wrap { max-width: 1200px; margin: 0 auto; width:100%; } 
+.wr {max-width: 1600px; margin: 0 auto; width: 100%;}
+.bold{font-weight: bold;}
+a:hover{ text-decoration: none;}
+
+
+/**********************************header*******************************/
+.header{width: 100%; position: relative;}
+#logo{max-width: 7%; position: absolute; top: 0; left: 400px;}
+.login{width: 100%; padding: 0.5rem; background-color: rgb(70, 70, 70);}
+.logins{}
+.logins>li{display: inline-block; float: right;}
+.logins>li>a{font-size: 1rem;  color: #fff;padding-left: 30px;}
+.nav{width: 100%; padding: 0.5rem 0.5rem 0 0.5rem; background-color: rgb(255, 255, 255); padding-top: 0;}
+.navs{}
+.navs>li{display: inline-block; float: left; padding-top: 0.25rem;}
+.navs>li>a{font-size: 1rem;  color: #222; text-align: center;
+padding:0 30px 0 30px; }
+.navs>li>a:hover{color: rgb(14, 93, 140); }
+.navs>li>a:first-child{padding-left: 280px;}
+.navs>div{padding: 0.5rem; background-color: rgb(14, 93, 140); color: #fff; float: right; text-align: center; }
+
+
+/**********************************main*******************************/
+
+.main{width: 100%; background-image: url(../img/novo/main_bg.png);height: 800px;}
+.mains{padding-top: 100px;}
+.main_tit{width: 550px; height: 323px; background-color: #fff; opacity: 0.8; }
+.main_tit>h2,.main_tit>h1,.main_tit>p {text-align: right;padding-right: 40px; }
+.main_tit>h2{padding-top:40px;font-family: 'Playfair Display', serif;  font-size: 3rem;}
+.main_tit>h1{font-family: 'Playfair Display', serif; font-size: 4rem;}
+.main_tit>hr{}
+.main_tit>p{text-align: right; font-size: 1.5rem;}
+
+
+/**********************************section 1*******************************/
+.offer{width: 100%; background-color: rgb(54, 77, 111);  padding: 30px 50px 50px 50px;}
+.offers>h1{color: #fff; text-align: center; font-size: 3.5rem;  margin-bottom: 30px; }
+.offer_cont>ul{width: 23%; display: inline-block; margin: 0; padding: 0;}
+.offer_cont>ul>li{text-align: center;}
+.offer_cont>ul:first-child{margin-left: 60px;}
+.offer_cont>ul>li>img{height: 313px; padding-bottom: 10px;}
+.cont_one>li>img{max-width: 240px;}
+.cont_one>li>a{color:#fff;  }
+.cont_two>li>img{max-width: 240px;}
+.cont_two>li>a{color:#fff; }
+.cont_three>li>img{max-width: 240px;}
+.cont_three>li>a{color:#fff; }
+.cont_four>li>img{max-width: 240px;}
+.cont_four>li>a{color:#fff; }
+
+
+
+/**********************************section 2*******************************/
+
+.about{width:100%; background-image: url(../img/novo/about_bg.png); padding: 80px 80px 120px 80px;}
+.abouts{width: 100%;}
+.abouts>div{}
+.about_tit{width:35%; display: inline-block;}
+.about_tit>h1{color:  rgb(54, 77, 111);  margin: 0;}
+.about_tit>h3{ color:rgb(54, 77, 111);   padding-bottom: 30px;}
+.about_tit>p{ color:rgb(54, 77, 111);  }
+.about_cont{width: 60%; display: inline-block; float: right;}
+.about_cont>a{ margin: 0;}
+.top_line{width: 100%;}
+.top_line>div{width: 33.33333333333333%;   padding: 5px; display: inline-block;
+text-align: center; font-weight: bold; color: rgb(54, 77, 111); font-size: 1.25rem;}
+.lines{background-color: rgb(54, 77, 111);}
+.about_img{max-width: 70%; margin: 0 auto; padding: 40px 0 10px 0;}
+.bot_line{background-color: rgb(54, 77, 111);  padding: 5px;}
+.ment{width: 100%; padding-bottom: 40px;}
+.ment>p{display: inline-block; width: 33%; text-align: center; color:rgb(54, 77, 111); }
+.ment>p:first-child{padding-left:60px; }
+.ment>p:nth-child(2){padding-right: 30px;}
+.ment>p:nth-child(3){padding-right: 100px;}
+
+
+
+
+/**********************************section 3*******************************/
+.sec_one{width: 100%; padding:100px; background-color: rgb(163, 163, 163);}
+.ones{}
+.ones>h1{ color: #222; font-size: 3rem; margin-bottom: 30px;}
+.room_one{background-image: url(../img/novo/sec_5.png); width:100%; height: 580px; position: relative;margin-bottom: 80px;}
+.one_tit{width: 30%; height:60%; background-color: #fff; opacity: 0.85; 
+padding: 25px 0 0 50px; position: absolute; top: 15%; left: 50%;}
+.one_tit>h2{font-size: 3rem; color: #222; padding-bottom: 20px;}
+.one_tit>p{font: #222; width: 60%; text-align: justify;}
+.boxs{width: 60%; margin: 50px 70px 40px 140px;}
+.boxs>div{display: inline-block; width:40%; text-align: center;}
+.boxs_left{ width: 50%; padding: 5px; border: 1px solid #222;
+background-color: #fff; margin-right: 30px;}
+.boxs_rit{width: 50%; padding: 5px; border: 1px solid #222;
+    background-color: #222; color: #fff;}
+.one>li>h2,.one>li>h5{color: #fff;}
+.one{margin-bottom: 130px;}
+
+/**********************************section 4*******************************/
+
+.twos>h1{ color: #222; font-size: 3rem; margin-bottom: 30px; text-align: right;}
+.room_two{background-image: url(../img/novo/sec_6.png); width:100%; height: 575px; position: relative;margin-bottom: 40px;}
+.two_tit{width: 30%; height:60%; background-color: #fff; opacity: 0.85; 
+padding: 25px 0 0 50px; position: absolute; top: 15%; left: 20%;}
+.two_tit>h2{font-size: 3rem; color: #222; padding-bottom: 20px;}
+.two_tit>p{font: #222; width: 60%; text-align: justify;}
+.boxs{width: 60%; margin: 50px 70px 40px 140px;}
+.boxs>div{display: inline-block; width:40%; text-align: center;}
+.boxs_left{ width: 50%; padding: 5px; border: 1px solid #222;
+background-color: #fff; margin-right: 30px;}
+.boxs_rit{width: 50%; padding: 5px; border: 1px solid #222;
+    background-color: #222; color: #fff;}
+
+    
+/**********************************section 5*******************************/
+
+.sec_three{width: 100%; padding:100px; background-color:rgb(54, 77, 111);}
+.threes>h1{ color: #fff; font-size: 3rem; margin-bottom: 30px;}
+.room_three{background-image: url(../img/novo/sec_7.png); width:100%; height: 580px; position: relative;margin-bottom: 80px;}
+.three_tit{width: 30%; height:60%; background-color: #fff; opacity: 0.85; 
+padding: 25px 0 0 50px; position: absolute; top: 15%; left: 55%;}
+.three_tit>h2{font-size: 3rem; color: #222; padding-bottom: 20px;}
+.three_tit>p{font: #222; width: 60%; text-align: justify;}
+.boxs{width: 60%; margin: 50px 70px 40px 140px;}
+.boxs>div{display: inline-block; width:40%; text-align: center;}
+.boxs_left{ width: 50%; padding: 5px; border: 1px solid #222;
+background-color: #fff; margin-right: 30px;}
+.boxs_rit{width: 50%; padding: 5px; border: 1px solid #222;
+    background-color: #222; color: #fff;}
+
+
+    /**********************************section 6*******************************/
+
+    
+.fours>h1{ color: #fff; font-size: 3rem; margin-bottom: 30px; text-align: right;}
+.room_four{background-image: url(../img/novo/sec_8.png); width:100%; height: 575px; position: relative;margin-bottom: 40px;}
+.four_tit{width: 30%; height:60%; background-color: #fff; opacity: 0.85; 
+padding: 25px 0 0 50px; position: absolute; top: 15%; left: 20%;}
+.four_tit>h2{font-size: 3rem; color: #222; padding-bottom: 20px;}
+.four_tit>p{font: #222; width: 60%; text-align: justify;}
+.boxs{width: 60%; margin: 30px 70px 40px 140px;}
+.boxs>div{display: inline-block; width:40%; text-align: center;}
+.boxs_left{ width: 50%; padding: 5px; border: 1px solid #222;
+background-color: #fff; margin-right: 30px;}
+.boxs_rit{width: 50%; padding: 5px; border: 1px solid #222;
+    background-color: #222; color: #fff;}
+
+
+
+/**********************************section 7******************************/
+
+.loca{width: 100%; background-color:rgb(255, 255, 255);  padding:100px 100px 300px 100px; }
+.locas{}
+.locas>div{display: inline;}
+.locas>h2{font-size: 2.5rem; color: #222; text-align: center; margin-bottom: 50px;}
+.loca_tit{margin: 0; }
+.loca_box{ width: 100%; }
+.loca_box>div{float: left;margin-bottom: 40px;}
+.loca_left{width: 50%; padding: 10px;
+background-color: #222;color:#fff;
+text-align: center;margin: 0;}
+.loca_rit{width: 50%; padding: 10px;
+background-color: #ccc; color:#222;
+text-align: center; 
+margin: 0;
+}
+#map{ margin-bottom: 20px;}
+
+
+.loca_site{width: 30%;float: right; display: block;
+margin-top: -520px; padding-left: 100px;}
+.loca_site>img{ width:70%; }
+/* 
+.loca_icon{width: 75%; }
+.loca_icon>p{display: inline; font-size: 1.5rem; }
+.loca_icon>p:hover{color:  rgb(54, 77, 111);}
+.icon_one{padding-left:110px; }
+.icon_two{padding-left:110px; }
+.icon_th{padding-left:110px; }
+.icon_fo{padding-left:110px; }
+ */
+.loca_icon>div{ height: 110px;}
+.loca_top>div{}
+ .loca_top>div{width:48%; border: 2px solid #ccc; padding: 0.5rem; float: left; box-sizing: border-box; margin-bottom: 2rem;}
+ .loca_top>div:first-child{margin-right:4%;}
+ .loca_top>div>p {text-align: right;}
+.top_l{width: 40%; color: #222;  text-align: center;float: left;}
+.top_l>.fa{font-size: 2rem; padding-top: 2rem;}
+.topss>.top_r>p{padding-top: 1rem; line-height: 0;}
+.topss>div,.topsss>div,.botss>div,.botsss>div{ display: inline-block;width: 50%;padding-top:1rem; }
+.topsss>.top_r>p{ padding-top: 2.5rem; }
+ .loca_bot>div{width:48%; border: 2px solid #ccc; padding: 0.5rem;}
+.topss,.topsss,.botss,.botsss{height: 160px;}
+ 
+ .loca_bot>div{width:48%; border: 2px solid #ccc; padding: 0.5rem; float: left; box-sizing: border-box;  margin: 0;}
+.botss>.top_l{width: 40%; color: #222;  text-align: center;float: left;}
+.botss>.top_l>.fa{font-size: 2rem; padding-top: 2rem;}
+.botss>.top_r>p{line-height:20px; margin: 0; padding-left: 50px;}
+.botsss>.top_l{width: 40%; color: #222;  text-align: center;float: left;}
+.botss>div{ display: inline-block;width: 50%;}
+.botsss>.top_r>p{ padding-top: 2.5rem;  line-height:20px;}
+ .loca_bot>div:first-child{margin-right:4%;}
+ .loca_bot>div>p {text-align: right;}
+
+
+ /********************************  footer    ***************************************/
+
+ .footer{width: 100%; padding: 4rem; background-color: #ccc;}
+ .foot_top{}
+ .foot_top>li{display: inline-block;}
+ .foot_top>li>a{padding: 1rem; font-weight: bold;}
+ .fam{float: right;}
+ .foot_center{}
+ .foot_center>li{display: inline-block;}
+ .foot_center>li>a{padding: 1rem; color: #666;}
+.ico{float: right; }
+
+.foot_bot{padding-top:40px;  text-align: center;}
+.foot_bot>li>a{color: #666;}

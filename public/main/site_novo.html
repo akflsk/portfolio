@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NOVOTEL</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/site_novo.css">
+    <script defer src="/__/firebase/5.5.5/firebase-app.js"></script>
+    <script defer src="/__/firebase/5.5.5/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.5.5/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.5.5/firebase-storage.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <img src="../img/novo/mainlogo.png" class="img" id="logo">
+        <div class="login clear">
+            <ul class="logins wrap">
+                <li>
+                    <a>로그인</a>
+                    <a>회원가입</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav">
+            <ul class="navs wrap">
+                <li>
+                    <a>WELCOME</a>
+                    <a>ROOMS</a>
+                    <a>DININIG</a>
+                    <a>WELLNESS CLUB</a>
+                    <a>FACILITIES</a>
+                    <a>OFFERS</a>
+                </li>
+                <div>RESERVATION</div>
+            </ul>
+        </div>
+    </header>
+    <section class="main">
+        <div class="mains wrap">
+            <div class="main_tit">
+                <h2 class="bold">CELEBRATION</h2>
+                <h1 class="bold">DINNER</h1>
+                <hr />
+                <p>2018.10.15 ~ 2018.12.31</p>
+                <p>SEOUL DRAGON CITY</p>
+            </div>
+        </div>
+    </section>
+    <section class="offer">
+        <div class="offers wrap">
+            <h1>SPECIAL OFFERS</h1>
+            <div class="offer_cont">
+                <ul class="cont_one">
+                    <li>
+                        <img src="../img/novo/sepcial_1.png" class="img">
+                        <br />
+                        <a>몰디브 인 서울 드래곤시티</a>
+                        <br />
+                        <a>2018-06-26~2018-08-31</a>
+                    </li>
+                </ul>
+                <ul class="cont_two">
+
+                    <li>
+                        <img src="../img/novo/sec_3.png" class="img">
+                        <br />
+                        <a>THE STARRY NIGHT
+                            <br />THE RIBBON</a>
+                        <br />
+                        <a>2018-06-26~2018-08-31</a>
+                    </li>
+                </ul>
+                <ul class="cont_three">
+
+                    <li>
+                        <img src="../img/novo/sec_2.png" class="img">
+                        <br />
+                        <a>SUMMER IN SKY BEACH</a>
+                        <br />
+                        <a>2018-06-26~2018-08-31</a>
+                    </li>
+                </ul>
+                <ul class="cont_four">
+                    <li>
+                        <img src="../img/novo/sec_4.png" class="img">
+                        <br />
+                        <a>THE STARRY NIGHT
+                            <br />KINGS VACATION</a>
+                        <br />
+                        <a>2018-06-26~2018-08-31</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about">
+        <div class="abouts wrap">
+            <div class="about_tit">
+                <h1 class="bold">ABOUT NOVO</h1>
+                <h3>MODERN&nbsp;EASY&nbsp;UPSCALE</h3>
+                <p>노보텔 앰버서더 서울 용산은 서울 한 가운데서 글로벌 스탠다드 서비스를 경험할 수 있는 대표적인 업스케일 호텔입니다.ITX 및 KTX, 2개 지하철 노선이 지나는 용산역과
+                    연결되고, 국개 금융 중심지인 여의도와 10분 거리에 위치해 비지니스와 레저 여행객 모두에게 최적의 입지를 자랑합니다.</p>
+            </div>
+            <div class="about_cont">
+                <div class="top_line">
+                    <div class="lines"></div>
+                    <div>WHY STAY WITH NOVO?</div>
+                    <div class="lines"></div>
+                </div>
+                <div class="about_img"><img src="../img/novo/about_icon.png" class="img"></div>
+                <div class="ment">
+                    <p>SAUNA</p>
+                    <p>WELLNESS</p>
+                    <p>SWIMMING POOL</p>
+                </div>
+                <div class="bot_line"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sec_one">
+        <div class="ones wr">
+            <h1>ROOMS</h1>
+            <div class="room_one">
+                <div class="one_tit">
+                    <h2 class="bold">SUPERIOR</h2>
+                    <p class="bold">한층 여유롭고 쾌적한 수페리어룸은 더블베드와
+                        트윈베드로 선택이 가능하며 최상의 안락함과
+                        품격있는 서비스를 제공해드립니다.
+                        아름다운 한강과 남산을 비롯한 도심의 전망을
+                        감상하실 수 있습니다. </p>
+                    <div class="boxs">
+                        <div class="boxs_left">MORE</div>
+                        <div class="boxs_rit">RESERVATION</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="one wrap">
+                <li>
+                    <h2>RESERVATION</h2>
+                    <hr />
+                    <h5>· CHECK IN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; 15:00</h5>
+                    <h5>· CHECK OUT&nbsp;&nbsp;|&nbsp;&nbsp; 12:00</h5>
+                    <h5>· LOCATION&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;서울특별시 용산구 청파로 20길 95</h5>
+                </li>
+            </ul>
+        </div>
+        <div class="twos wr">
+            <h1>RESTURANTS & BAR</h1>
+            <div class="room_two">
+                <div class="two_tit">
+                    <h2 class="bold">A LA MASION</h2>
+                    <p class="bold">알라메종은 동서양의조화가 돋보이는이국적인
+                        ‘와인바 & 델리’입니다. 낮에는 고급 티,
+                        커피와 함께 홈메이드 베이커리를즐기고,
+                        저녁에는다채로운 수입 와인과 프렌치 퀴진을
+                        접목한 다이닝 메뉴를 맛볼 수 있습니다. </p>
+                    <div class="boxs">
+                        <div class="boxs_left">MORE</div>
+                        <div class="boxs_rit">RESERVATION</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec_three">
+        <div class="threes wr">
+            <h1>THE WEDDING</h1>
+            <div class="room_three">
+                <div class="three_tit">
+                    <h2 class="bold">ATELIER OF ART WEDDING
+                    </h2>
+                    <p class="bold">일생에 단 한 번뿐인 소중한 순간,사랑하는 두 사람의
+                        출발을 서울드래곤시티에서 더욱 빛나게 시작하세요. </p>
+                    <div class="boxs">
+                        <div class="boxs_left">MORE</div>
+                        <div class="boxs_rit">RESERVATION</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="fours wr">
+            <h1>MEETING & CONVENTION</h1>
+            <div class="room_four">
+                <div class="four_tit">
+                    <h2 class="bold">GRAND BALLROOM HANRA</h2>
+                    <p class="bold">서울드래곤시티는 대형 미디어월이 설치된 그랜드 볼룸 2개와
+                        첨단 시청각 장비를 완비한
+                        미팅룸에서 다양한 행사 진행이 가능합니다. </p>
+                    <div class="boxs">
+                        <div class="boxs_left">MORE</div>
+                        <div class="boxs_rit">RESERVATION</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="loca">
+        <div class="locas wrap">
+            <h2>LOCATION</h2>
+            <div class="loca_tit">
+                <div class="loca_box clear">
+                    <div class="loca_left">대중교통으로 오시는길</div>
+                    <div class="loca_rit">공항에서 오시는 길</div>
+                </div>
+                <div id="map" style="width:1200px;height:410px;"></div>
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=60f4a1ad8d3365f672f2de43c75c730f"></script>
+                <script>
+                    var container = document.getElementById('map');
+                    var options = {
+                        center: new daum.maps.LatLng(37.531796, 126.964203),
+                        level: 3
+                    };
+
+                    var map = new daum.maps.Map(container, options);
+                </script>
+            </div>
+            <div class="loca_icon">
+                <div class="loca_top">
+                    <div class="topss">
+                        <div class="top_l">
+                            <i class="fa fa-subway icon_one"></i>
+                            <h5 class="bold">열차/지하철<br />
+                                (약 1시간 15분/급행)</h5>
+                        </div>
+                        <div class="top_r">
+                            <p>-탑승: 인천공항 AREX 역 </p>
+                            <p>-환승: 서울역 1호선</p>
+                            <p>-하차: 용산역 1호선 (3번 출구) ※ 도보 3분</p>
+                            <p>-요금: 9,250원 (급행)</p>
+                        </div>
+                    </div>
+                    <div class="topsss">
+                        <div class="top_l">
+                            <i class="fa fa-taxi icon_two"></i>
+                            <h5 class="bold">택시 (57 km / 약 55분)</h5>
+                        </div>
+                        <div class="top_r">
+                            <p>-요금: 약 45,000원~50,000 원 (일반) </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="loca_bot">
+                    <div class="botss">
+                        <div class="top_l">
+                            <i class="fa fa-bus icon_th"></i>
+                            <h5 class="bold">
+                                리무진 버스 <br />
+                                (No. 6030 / 약 1시간 30분)</h5>
+                        </div>
+                        <div class="top_r">
+                            <p>-탑승: 인천공항 터미널 1 (1층) 6B & 터미널 2 (B1) 트래픽 센터 #32</p>
+                            <p>-하차: 서울드래곤시티 (이비스 스타일 측면 출입구)</p>
+                            <p>-요금: 성인 15,000 원 & 소아 11,000원 / 1인 편도</p>
+
+                        </div>
+                    </div>
+                    <div class="botsss">
+                        <div class="top_l">
+                            <i class="fa fa-car icon_fo"></i>
+                            <h5 class="bold">자가용 (57 km / 약 55분)</h5>
+                        </div>
+                        <div class="top_r">
+                            <p>-인천공항 → 북인천IC → 김포공항IC → 방화대교 →강변북로 → 원효로 → 용산전자상가 사거리 → 서울드래곤시티</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footers wrap">
+            <ul class="foot_top">
+                <li>
+                    <a>해외호텔예약</a>
+                    <a>고객센터</a>
+                    <a>개인정보처리방침</a>
+                    <a>멤버쉽약관</a>
+                    <a>뉴스레터</a>
+                    <a>채용</a>
+                    <a>사이트맵</a>
+                </li>
+                <li class="fam">
+                    <a>FAMILLY SITE &nbsp;&nbsp;&nbsp;<i class="fa fa-plus"></i></a>
+                </li>
+            </ul>
+            <hr />
+            <ul class="foot_center">
+                <li>
+                    <a>(주)서부티앤디</a>
+                    <a>서울시 용산구 청파로 20길 95</a>
+                    <a>TEL 02-2223-7000</a> <br />
+                    <a>사업자등록번호 106-85-27420</a>
+                    <a>통신판매신고번호 서울용산1057호</a>
+                    <a>대표 승만호</a>
+                </li>
+                <li class="ico">
+                    <a><i class="fa fa-tripadvisor"></i>&nbsp;&nbsp;tripadvisor</a>
+                    <a><i class="fa fa-facebook-square"></i>&nbsp;&nbsp;facebook</a>
+                    <a><i class="fa fa-instagram"></i>&nbsp;&nbsp;instagram</a>
+                </li>
+            </ul>
+            <ul class="foot_bot">
+                <li><a>Coputight ⒞ 2018 Ambassador Hotel Grop. All rights reserved.</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script defer src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <!-- <script defer src="../js/Ajax.js"></script> -->
+    <script defer src="../js/site_novo.js"></script>
+
+</body>
+
+</html>
