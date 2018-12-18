@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Jua|Nanum+Gothic+Coding|Noto+Sans+KR'); 
 
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:800');
+
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 
 @import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
@@ -13,7 +15,7 @@
 body {width: 100%; height: 100%; font-family: 'Nanum Gothic', sans-serif;}
 .wrap { max-width: 1200px; margin: 0 auto; width:100%; } 
 .bold{font-weight: bold;}
-a:hover{text-decoration: none;}
+a:hover{text-decoration: none; cursor: pointer;}
 /* .pager_wrap {width: 100%; position: absolute; top: 200px; font-size: 0.75em; z-index: 9999;} */
 
 
@@ -38,8 +40,8 @@ a:hover{text-decoration: none;}
   text-shadow: 2px 2px 4px #000000; font-family: 'Black Han Sans', sans-serif;}
 .main_tit>p{padding-top: 30px;font-family: 'Do Hyeon', sans-serif; font-size: 1.5rem;}
 .main_img>img{}
-.ice{position: absolute; top: 25%; right: 20%; z-index: 13;}
-.hot{position: absolute; top: 15%; right: 30%;z-index: 12;}
+.ice{position: absolute; top: 25%; right: 20%; z-index: 13; }
+.hot{position: absolute; top: 15%; right: 30%;z-index: 12; }
 
 #cir{position: absolute; bottom: 50; left: 47%;}
 .cir .fa{color: #fff; padding-right: 40px;}
@@ -50,7 +52,7 @@ a:hover{text-decoration: none;}
 .lt_tit{position: absolute; top: 10%; left: 30%;}
 .lt_tit>div{border: 1px solid #fff; color: #fff; text-align: center; width: 170px;}
 .lt_tit>p,.lt_tit>h1,.lt_tit>h2{color: #fff; }
-.lt_tit>h1{font-weight: bold; line-height: 40px; letter-spacing: 10px; font-size: 4rem;}
+.lt_tit>h1{font-weight: 800; line-height: 40px; letter-spacing: 10px; font-size: 4rem;}
 .lt_tit>h2{font-size: 3.5rem; }
 .lt_tit>p{margin-bottom: 10px; text-align: center;margin-bottom: 40px;}
 .box{background-color: #222; color: #fff; position: absolute; top: 55%; left: 40%; width: 36%;
@@ -60,7 +62,7 @@ a:hover{text-decoration: none;}
 .rt_tit{position: absolute; top: 10%; left: 30%;}
 .rt_tit>div{border: 1px solid rgba(171,22,44); color: rgba(171,22,44); text-align: center; width: 170px;}
 .rt_tit>p,.rt_tit>h1,.rt_tit>h2{ color: rgba(171,22,44); }
-.rt_tit>h1{font-weight: bold; line-height: 40px; letter-spacing: 10px; font-size: 4rem;}
+.rt_tit>h1{font-weight: 800; line-height: 40px; letter-spacing: 10px; font-size: 4rem;}
 .rt_tit>h2{font-size: 3.5rem; }
 .rt_tit>p{margin-bottom: 10px; text-align: center;margin-bottom: 40px;}
 .box{background-color: #222; color: #fff; position: absolute; top: 55%; left: 30%; width: 36%;
@@ -74,7 +76,7 @@ a:hover{text-decoration: none;}
 .menu_tit>div{border: 1px solid #000; color: #000; text-align: center; width: 200px; margin-bottom: 50px;}
 .menu_tit>p {text-align: center; width: 50%; margin-bottom: 70px;}
 .menu_tit > h1{line-height: 40px; font-size:4rem; margin-top:30px;}
-.menu_tit > h1:last-child{line-height: 40px; font-size:4rem; font-weight: bold;}
+.menu_tit > h1:last-child{line-height: 40px; font-size:4rem; font-weight: 800;}
 
 
 .boxs{background-color: #222; color: #fff; position: absolute; top: 75%; left: 25%; width: 20%;
@@ -95,13 +97,13 @@ a:hover{text-decoration: none;}
 .ck_one{top:10%; left: 6%;}
 .ck_one>h2{color: #222; font-size: 2.7rem; font-weight: bold;padding-bottom: 20px;}
 .ck_one>p{color:#fff; font-size:3rem; line-height: 40px;}
-.ck_one>img{width: 90%; }
+.ck_one>img{width: 115%; }
 
 
 .ck_two{top:10%; left:38%;}
 .ck_two>h2{color: #222;  font-size: 2.7rem;font-weight: bold;padding-bottom: 20px;}
 .ck_two>p{color:#fff; font-size:3rem; line-height: 40px;}
-.ck_two>img{width:87%;}
+.ck_two>img{width:110%;}
 
 
 .ck_three{top:10%; left: 70%;}
@@ -146,13 +148,13 @@ a:hover{text-decoration: none;}
 .last_lt>h5>span{display: block;}
 .last_lt>img{position: absolute; top: 10%; left: 34%; width:250px; z-index:2;}
 .last_lt>div{position: absolute; top: 14%; left: 35%;  background-color: rgba(171,22,44); width:250px; height:235px;}
-.last_rt{ background-color: rgba(171,22,44);  height: 320px;}
+.last_rt{ background-color: rgba(171,22,44);  height: 320px; position: relative;}
 .last_rt>div{border: 1px solid #fff; width: 170px; text-align: center;  margin: 60px 0 0 30px; }
 .last_rt>div,.last_rt>h1{color: #fff; margin-left: 100px; }
 .last_rt>h2{margin-top:20px;font-size: 2.7rem;  color:#fff;margin-left: 100px;}
 .last_rt>h1{line-height: 50px;font-size: 3rem; font-weight: bold; margin-top: 0;}
 .last_rt>h1>span {display: block;}
-
+#hand{max-width: 30%; position: absolute; top: 22%; right: 25%;}
 
 /*******************footer*********************/
 .footer{width: 100%; height: 200px; background-color: rgb(40, 40, 40);  margin: 0;}

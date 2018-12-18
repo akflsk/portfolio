@@ -10,11 +10,11 @@ h2,h3,h4,h5,p,a {
 .wrap { max-width: 1200px; margin: 0 auto; width:100%; } 
 .wr {max-width: 1600px; margin: 0 auto; width: 100%;}
 .bold{font-weight: bold;}
-a:hover{ text-decoration: none;}
+a:hover{ text-decoration: none; cursor: pointer;}
 
 
-/**********************************header*******************************/
-.header{width: 100%; position: relative;}
+/**********************************header******************************relative;*/
+.header{width: 100%; position: fixed; z-index: 2; }
 #logo{max-width: 7%; position: absolute; top: 0; left: 400px;}
 .login{width: 100%; padding: 0.5rem; background-color: rgb(70, 70, 70);}
 .logins{}
@@ -28,12 +28,12 @@ padding:0 30px 0 30px; }
 .navs>li>a:hover{color: rgb(14, 93, 140); }
 .navs>li>a:first-child{padding-left: 280px;}
 .navs>div{padding: 0.5rem; background-color: rgb(14, 93, 140); color: #fff; float: right; text-align: center; }
-
+.navs>div:hover{cursor: pointer; background-color: #fff;color:rgb(14, 93, 140);  }
 
 /**********************************main*******************************/
 
 .main{width: 100%; background-image: url(../img/novo/main_bg.png);height: 800px;}
-.mains{padding-top: 100px;}
+.mains{padding-top: 160px;}
 .main_tit{width: 550px; height: 323px; background-color: #fff; opacity: 0.8; }
 .main_tit>h2,.main_tit>h1,.main_tit>p {text-align: right;padding-right: 40px; }
 .main_tit>h2{padding-top:40px;font-family: 'Playfair Display', serif;  font-size: 3rem;}
@@ -62,18 +62,19 @@ padding:0 30px 0 30px; }
 
 /**********************************section 2*******************************/
 
-.about{width:100%; background-image: url(../img/novo/about_bg.png); padding: 80px 80px 120px 80px;}
+.about{width:100%; background-image: url(../img/novo/about_bg.png); padding: 80px 80px 80px 80px;}
 .abouts{width: 100%;}
 .abouts>div{}
 .about_tit{width:35%; display: inline-block;}
 .about_tit>h1{color:  rgb(54, 77, 111);  margin: 0;}
 .about_tit>h3{ color:rgb(54, 77, 111);   padding-bottom: 30px;}
-.about_tit>p{ color:rgb(54, 77, 111);  }
-.about_cont{width: 60%; display: inline-block; float: right;}
-.about_cont>a{ margin: 0;}
+.about_tit>p{ color:rgb(54, 77, 111);  width: 21.875rem;}
+.about_cont{width: 60%; display: inline-block; }
+.about_cont>a {margin: 0;}
 .top_line{width: 100%;}
-.top_line>div{width: 33.33333333333333%;   padding: 5px; display: inline-block;
+.top_line>div{width: 33.33333333333333%;   padding: 5px; display: inline-block;float:right;
 text-align: center; font-weight: bold; color: rgb(54, 77, 111); font-size: 1.25rem;}
+.top_line>div:nth-child(2){margin-top: -12px;}
 .lines{background-color: rgb(54, 77, 111);}
 .about_img{max-width: 70%; margin: 0 auto; padding: 40px 0 10px 0;}
 .bot_line{background-color: rgb(54, 77, 111);  padding: 5px;}
@@ -150,9 +151,10 @@ padding: 25px 0 0 50px; position: absolute; top: 15%; left: 20%;}
 .boxs>div{display: inline-block; width:40%; text-align: center;}
 .boxs_left{ width: 50%; padding: 5px; border: 1px solid #222;
 background-color: #fff; margin-right: 30px;}
+.boxs_left:hover{cursor: pointer; background-color:rgb(54, 77, 111); color:#fff;}
 .boxs_rit{width: 50%; padding: 5px; border: 1px solid #222;
     background-color: #222; color: #fff;}
-
+.boxs_rit:hover{cursor: pointer;background-color:rgb(54, 77, 111); color:#fff;}
 
 
 /**********************************section 7******************************/
@@ -172,7 +174,7 @@ background-color: #ccc; color:#222;
 text-align: center; 
 margin: 0;
 }
-#map{ margin-bottom: 20px;}
+#map{ margin-bottom: 20px; z-index: 1;}
 
 
 .loca_site{width: 30%;float: right; display: block;

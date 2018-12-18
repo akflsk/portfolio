@@ -31,8 +31,15 @@ section{}
 #pen>i:hover{color: rgba(254,111,97);}
 #tit{font-size: 3rem; margin-left:0.5rem; line-height:4.4rem; height:4.4rem; font-weight:bold; text-shadow:0 0 4px rgba(0,0,0,.3)}
 .site>a:hover{cursor: pointer;}
+
+/******** 포트폴리오 사이트 ****/
 .site_img {z-index:2;}
-.site_img>img{position: absolute; width: 100%; display: none; z-index:3; max-height: 719px;}
+.site_img>li>img{position: absolute; width: 100%; display: none; z-index:3; max-height: 719px;}
+#slide>li>a {position: absolute; z-index: 4;display: none;
+top: 73%; right: 16.7%;}
+
+
+
 
 /***************hover***********************/
 #home{display: block; padding-bottom: 50px; color: #ccc;}

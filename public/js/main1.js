@@ -57,28 +57,60 @@ $("#skill").click(function(){
 var n = 0;
 var clickChk = true;
 
+// $(".site>a").click(function(){
+//     n = $(this).index();
+//     $("#close").trigger("click");
+//     $(".site_img>li>img").eq(n).show();
+//     $(".xs").stop().animate({"top":"5%"}, 1000, "linear");
+//     $("#bar").show();
+//     $("#close").hide();
+// });
+
+
+
 $(".site>a").click(function(){
     n = $(this).index();
     $("#close").trigger("click");
-    $(".site_img > img").eq(n).show();
+    $(".site_img>li>img").eq(n).show();
+    $(".site_img>li>a").eq(n).show();
     $(".xs").stop().animate({"top":"5%"}, 1000, "linear");
     $("#bar").show();
     $("#close").hide();
 });
 
 
+
+
+
+
+
+
+
+
+
 $(".site>a").hover(function(){
     if(clickChk) {
-        $(".site_img > img").eq($(this).index()).show();
+        $(".site_img>li>img").eq($(this).index()).show();
         $(".xs").stop().animate({"top":"5%"}, 1000, "linear");
     }
 }, function(){
     console.log("hoverOut");
     if(clickChk) {
-        $(".site_img > img").hide();
+        $(".site_img>li>img").hide();
         // $(".xs").stop().animate({"top":"-5%"}, 1000, "linear");
     }
 });
+
+
+
+
+
+
+
+
+
+
+
 
 
 

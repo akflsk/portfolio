@@ -9,7 +9,7 @@
 body {width: 100%; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
 .wrap { max-width: 1200px; margin: 0 auto; width:100%; } 
 .bold{font-weight: bold;}
-a:hover{text-decoration: none;}
+a:hover{text-decoration: none; cursor: pointer;}
 
 /*****************************    header      *****************************/
 .header{width: 100%; background-color: rgba(248, 249, 244);border-bottom: 2px solid #f00;}
@@ -53,6 +53,7 @@ a:hover{text-decoration: none;}
 .boggle_tit>h1{margin: 0; line-height: 50px; font-weight: bold; font-size: 3.5rem; color: #fff; text-align: left;}
 .boggle_one{font-size: 2rem;text-align: center; color: #fff; background-color: rgb(240, 62, 34); width:30%; margin-top: 20px;}
 .boggle_box{border: 1px solid #fff; font-size: 1.5rem; width: 13%; margin-left: 70px; margin-top: 20px; color: #fff; }
+.boggle_box:hover{background-color:#333; color: #fff; cursor: pointer; }
 .boogle_img>img{position: absolute;}
 .boogle_img>img:first-child,.boogle_img>img:nth-child(2),.boogle_img>img:nth-child(3){ }
 .boogle_img>img:first-child{top:40px; left:53%;max-width:30%;}
@@ -88,6 +89,7 @@ a:hover{text-decoration: none;}
     margin-bottom: 20px;
     font-size: 1.75rem; width: 140px; text-align: center;}
 .box_two{border: 1px solid #000; font-size: 1.5rem; width: 13%; margin-left: 390px; margin-top: 20px;}
+.box_two:hover{background-color:#333; color: #fff; cursor: pointer; }
 
 
 /*****************************   section 2    *****************************/
@@ -104,7 +106,7 @@ a:hover{text-decoration: none;}
     margin-bottom: 20px;
     font-size: 1.75rem; width: 250px; text-align: center;}
 .squid_two{border: 1px solid #000; font-size: 1.5rem; width: 13%; margin-left: 370px; margin-top: 20px;}
-
+.squid_two:hover{background-color:#333; color: #fff; cursor: pointer; }
 
 /*****************************   section 3   *****************************/
 .ship{width: 100%; height: 500px; background-image: url(../img/ns/ns_bg5.png);}
@@ -121,7 +123,7 @@ a:hover{text-decoration: none;}
     margin-bottom: 20px; font-family: 'Song Myung', serif;
     font-size: 1.75rem; width: 140px; text-align: center;}
 .ship_two{border: 1px solid #000; font-size: 1.5rem; width: 13%; margin-left: 390px; margin-top: 20px;}
-
+.ship_two:hover{background-color:#333; color: #fff; cursor: pointer; }
 /*****************************   section 4   *****************************/
 .info{width:100%;  height:330px;  overflow: hidden;}
 .infos{width: 100%; position: relative;}
@@ -134,6 +136,7 @@ a:hover{text-decoration: none;}
 .info_tit>div{background-color: orange; color: #fff; font-size: 2.5rem;}
 .info_right{background-color: rgb(215, 244, 245);height:330px;  position: relative;}
 .info_bot{position:absolute; top:240px; right:505px;width: 60px; background-color:#000; text-align: center; color: #fff; font-size: 1rem;}
+.info_bot:hover{background-color:#fff; color: #000; cursor: pointer; }
 .info_nav{padding-top: 40px;padding-left:200px; }
 .info_nav>li>img{width: 60%; text-align: center;padding-left: 10px;}
 .info_nav>li{display: inline-block;  padding-left: 10px;}
